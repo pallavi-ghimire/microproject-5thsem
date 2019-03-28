@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Leaves</title>
+
+    <link href="style.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <!--<link rel = "stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading">Organization Name</div>
+        <div class="list-group list-group-flush">
+            <a href="index.html" class="list-group-item list-group-item-action bg-light active">Leaves</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Message Board </a>
+            <a href="Departments.html" class="list-group-item list-group-item-action bg-light">Departments</a>
+            <a href="Employee_list.html" class="list-group-item list-group-item-action bg-light">Employee List</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Notifications</a>
+            <a href="Profile.html" class="list-group-item list-group-item-action bg-light">Profile</a>
+        </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!--<a class="navbar-brand" href="#">Navbar</a>-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <h3>Leaves</h3>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="formSearch input form-control mr-sm-2" type="search" placeholder="Search"
+                           aria-label="Search">
+                    <span class="border"></span>
+                    <button class="btn btn-primary searchButton" type="submit"><i
+                            class="material-icons">search</i></button>
+                </form>
+                <div className="iconStyle"><i class="glyphicon glyphicon-user"></i></div>
+
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="card main-card">
+                <br>
+                <div class="row">
+                    <div class="col-md-5 card">
+                        <div class="card-headings">
+                            <h5>Leave Application</h5>
+                        </div>
+                        <br>
+                        <label for="from_date">From: </label>
+                        <input type="date" class="form-control" name="from_date"><br>
+                        <label for="to_date">To: </label>
+                        <input type="date" class="form-control" name="to_date"><br>
+                        <label for="description">Description</label>
+                        <textarea name="description" class="form-control"></textarea><br>
+                        <label for="category">Category</label>
+                        <select class="form-control">
+                            <option value="cat1">Sick Leave</option>
+                            <option value="cat2">Casual Leave</option>
+                        </select><br>
+                        <input type="submit" class="buttons" value="Request Leave">
+                    </div>
+                    <div class="col-md-5 offset-1 card">
+                        <div class="card-headings">
+                            <h5>Leave Information</h5>
+                        </div>
+                        <!--<br>-->
+                        <!--<p>Company leave policy here, including sick leave, casual leave, annual leave</p>-->
+                        <!--<br><br>-->
+                        <br><br>
+                        <h5>Your Leave Balance</h5><br>
+                        <div class="row">
+                            <div class="col-md-3" style="text-align: center">
+                                <h6>Category <br><br></h6><br>
+
+                                <!--<h6>Sick Leave: </h6><br>-->
+                                <!--<p class="day-display">25</p>-->
+                                <label>Carry Over: </label><br><br>
+                                <label>Allocated: </label><br><br>
+                                <label>Total:</label><br><br>
+                                <label>Used: </label><br><br>
+                                <label>Balance: </label><br><br>
+                            </div>
+                            <div class="col-md-3" style="text-align: center">
+                                <h6>Sick Leave: <br><br></h6><br>
+                                <!--<p class="day-display">25</p>-->
+                                <p class="day-display">2</p>
+                                <p class="day-display">10</p>
+                                <p class="day-display">12</p>
+                                <p class="day-display">2</p>
+                                <p class="day-display">10</p>
+                            </div>
+                            <div class="col-md-3" style="text-align: center">
+                                <h6>Casual Leave: </h6><br>
+                                <p class="day-display">2</p>
+                                <p class="day-display">10</p>
+                                <p class="day-display">12</p>
+                                <p class="day-display">2</p>
+                                <p class="day-display">10</p>
+                            </div>
+                            <div class="col-md-3" style="text-align: center">
+                                <h6>Annual Leave: </h6><br>
+                                <p class="day-display">2</p>
+                                <p class="day-display">10</p>
+                                <p class="day-display">12</p>
+                                <p class="day-display">2</p>
+                                <p class="day-display">10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Employee List</title>
+
+    <link href="style.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <!--<link rel = "stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading">Organization Name</div>
+        <div class="list-group list-group-flush">
+            <a href="index.html" class="list-group-item list-group-item-action bg-light ">Leaves</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Message Board </a>
+            <a href="Departments.html" class="list-group-item list-group-item-action bg-light">Departments</a>
+            <a href="Employee_list.html" class="list-group-item list-group-item-action bg-light active">Employee List</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Notifications</a>
+            <a href="Profile.html" class="list-group-item list-group-item-action bg-light">Profile</a>
+        </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!--<a class="navbar-brand" href="#">Navbar</a>-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <h3>Employee List</h3>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="formSearch input form-control mr-sm-2" type="search" placeholder="Search"
+                           aria-label="Search">
+                    <span class="border"></span>
+                    <button class="btn btn-primary searchButton" type="submit"><i
+                            class="material-icons">search</i></button>
+                </form>
+                <div className="iconStyle"><i class="glyphicon glyphicon-user"></i></div>
+
+            </div>
+        </nav>
+
+        <div class="container-fluid" style="overflow: auto">
+            <div class="card main-card">
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <br>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>S.No</th>
+                                <th>Name</th>
+                                <th>Department</th>
+                                <th>Contact No</th>
+                                <th>Email Address</th>
+                                <th>More Details</th>
+                            </tr>
+                            <tr>
+                                <td>S.No</td>
+                                <td>Name</td>
+                                <td>Department</td>
+                                <td>Contact No</td>
+                                <td>Email Address</td>
+                                <td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Here</button></td>
+                            </tr>
+                            <tr>
+                                <td>S.No1</td>
+                                <td>Name1</td>
+                                <td>Department1</td>
+                                <td>Contact No1</td>
+                                <td>Email Address1</td>
+                                <td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Here</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" style="font-weight: lighter">Person 1</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container row">
+                    <div class="col-md-6">
+                        <img src="images/kisspng-user-profile-computer-icons-clip-art-profile-5ac092f6f2d337.1560498715225699749946.jpg"
+                             class="image-profile">
+                    </div>
+                    <div class="col-md-6" style="text-align: center">
+                        <label class="label-case">Joined on: </label><br>
+                        <span class="span-class"> Join_date</span><br><br>
+                        <label class="label-case">Designation: </label><br>
+                        <span class="span-class">Post_name</span><br><br>
+                        <label class="label-case">Email: </label><br>
+                        <span class="span-class">Email</span><br><br>
+                        <label class="label-case">Department:</label><br>
+                        <span class="span-class">Dept_name</span>
+                    </div>
+                </div><br><br>
+                <center><h5 style="font-weight: lighter">Personal Information</h5></center><br>
+                <div class="container row">
+                    <div class="col-md-6" style="text-align: center">
+                        <label class="label-case">Gender</label><br>
+                        <span class="span-class"> Gender</span><br><br>
+                        <label class="label-case">Qualification: </label><br>
+                        <span class="span-class">Qualification</span><br><br>
+                        <label class="label-case">Skillset: </label><br>
+                        <span class="span-class">Skillset</span><br><br>
+                    </div>
+                    <div class="col-md-6" style="text-align: center">
+                        <label class="label-case">Contact no: </label><br>
+                        <span class="span-class"> Number</span><br><br>
+                        <label class="label-case">Emergency no: </label><br>
+                        <span class="span-class">Number</span><br><br>
+                        <label class="label-case">Blood Group:</label><br>
+                        <span class="span-class"> Blood_group</span><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /#wrapper -->
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+
+</body>
+
+</html>

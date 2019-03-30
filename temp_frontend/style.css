@@ -412,3 +412,38 @@ td {
     background-color: #2F85F5 !important;
     font-size: 14px !important;
 }
+
+.btn-dept {
+    border-radius: 50px 50px !important;
+    background-color: rgb(178, 4, 247);
+    padding: 15px;
+    border: none !important;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-dept:focus {
+    outline: none;
+}
+
+.btn-dept:hover {
+    background-color: rgb(127, 4, 185);
+}
+
+.fa {
+    font-size: 24px !important;
+    color: #626262;
+    margin: 5px;
+}
+
+.button-edit-delete {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.button-edit-delete:focus {
+    outline: none;
+}

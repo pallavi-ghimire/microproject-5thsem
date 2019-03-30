@@ -19,6 +19,8 @@
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <!--<link rel = "stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
@@ -31,7 +33,7 @@
         <div class="sidebar-heading">Organization Name</div>
         <div class="list-group list-group-flush">
             <a href="index.html" class="list-group-item list-group-item-action bg-light ">Leaves</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Message Board </a>
+            <a href="Message_board.html" class="list-group-item list-group-item-action bg-light">Message Board </a>
             <a href="Departments.html" class="list-group-item list-group-item-action bg-light active">Departments</a>
             <a href="Employee_list.html" class="list-group-item list-group-item-action bg-light">Employee List</a>
             <a href="#" class="list-group-item list-group-item-action bg-light">Notifications</a>
@@ -69,42 +71,70 @@
         <div class="container-fluid">
             <div class="card main-card">
                 <br>
-                <div class="row">
-                    <div class="col-md-4 offset-1 card" style="margin-bottom: 60px">
-                        <div class="card-headings">
-                            <h5>Department 1</h5>
+                <div class="row" style="margin-left: 50px">
+                    <!--<div class="col-md-10">-->
+                        <!--<div class="row">-->
+                            <div class="col-md-4 offset-1 card" style="margin-bottom: 60px">
+                                <div class="card-headings">
+                                    <h5>Department 1</h5>
+                                </div>
+                                <br><br>
+                                <button class="btn-dept" data-toggle="modal" data-target="#myModal">Add New Member
+                                </button>
+                                <br><br>
+                                <button class="btn-dept">View existing</button><br>
+                                <center><button type="button" class="button-edit-delete"><i class="fa fa-trash-o"></i></button></center>
+                                <br>
+                            </div>
+                            <div class="col-md-4 offset-1 card" style="margin-bottom: 60px">
+                                <div class="card-headings">
+                                    <h5>Department 1</h5>
+                                </div>
+                                <br><br>
+                                <button class="btn-dept" data-toggle="modal" data-target="#myModal">Add New Member
+                                </button>
+                                <br><br>
+                                <button class="btn-dept">View existing</button><br>
+                                <center><button type="button" class="button-edit-delete"><i class="fa fa-trash-o"></i></button></center>
+                                <br>
+                            </div>
+                            <div class="col-md-4 offset-1 card" style="margin-bottom: 60px">
+                                <div class="card-headings">
+                                    <h5>Department 1</h5>
+                                </div>
+                                <br><br>
+                                <button class="btn-dept" data-toggle="modal" data-target="#myModal">Add New Member
+                                </button>
+                                <br><br>
+                                <button class="btn-dept">View existing</button><br>
+                                <center><button type="button" class="button-edit-delete"><i class="fa fa-trash-o"></i></button></center>
+                                <br>
+                            </div>
+                            <div class="col-md-4 offset-1 card" style="margin-bottom: 60px">
+                                <div class="card-headings">
+                                    <h5>Department 1</h5>
+                                </div>
+                                <br><br>
+                                <button class="btn-dept" data-toggle="modal" data-target="#myModal">Add New Member
+                                </button>
+                                <br><br>
+                                <button class="btn-dept">View existing</button><br>
+                                <center><button type="button" class="button-edit-delete"><i class="fa fa-trash-o"></i></button></center>
+                                <br>
+                            </div>
                         </div>
-                        <br><br>
-                        <button class="buttons" data-toggle="modal" data-target="#myModal">Add New Member</button><br><br>
-                        <button class="buttons">View existing</button><br><br>
                     </div>
-                    <div class="col-md-4 offset-1 card" style="margin-bottom: 60px">
-                        <div class="card-headings">
-                            <h5>Department 1</h5>
-                        </div>
-                        <br><br>
-                        <button class="buttons" data-toggle="modal" data-target="#myModal">Add New Member</button><br><br>
-                        <button class="buttons">View existing</button><br><br>
-                    </div>
-                    <div class="col-md-4 offset-1 card" style="margin-bottom: 60px">
-                        <div class="card-headings">
-                            <h5>Department 1</h5>
-                        </div>
-                        <br><br>
-                        <button class="buttons" data-toggle="modal" data-target="#myModal">Add New Member</button><br><br>
-                        <button class="buttons">View existing</button><br><br>
-                    </div>
-                    <div class="col-md-4 offset-1 card" style="margin-bottom: 60px">
-                        <div class="card-headings">
-                            <h5>Department 1</h5>
-                        </div>
-                        <br><br>
-                        <button class="buttons" data-toggle="modal" data-target="#myModal">Add New Member</button><br><br>
-                        <button class="buttons">View existing</button><br><br>
-                    </div>
-
-                </div>
-            </div>
+                    <!--<div class="col-md-2">-->
+                        <!--<span style="font-weight: lighter; font-size: 18px"> Add New Department</span>-->
+                        <!--<center><button class="buttons" style="padding: 15px 40px; ">+</button></center>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <center>
+                <button class="buttons" style="padding: 15px 30px; ">+</button><br>
+                <span style="font-weight: lighter; font-size: 18px"> Add New</span>
+            </center>
+            <br><br>
         </div>
     </div>
     <!-- /#page-content-wrapper -->
@@ -118,43 +148,46 @@
                 <h4 class="modal-title" style="font-weight: lighter">Add New Employee</h4>
             </div>
             <div class="modal-body">
-                <form class="form-group" action = "#">
-                <div class="row">
-                    <div class="col-md-6">
-                        <label>Name: </label>
-                        <input type="text" class="form-control"><br>
-                        <label>Designation: </label>
-                        <input type="text" class="form-control"><br>
-                        <label>Email: </label>
-                        <input type="text" class="form-control"><br>
-                        <label>Department: </label>
-                        <select class="form-control">
-                            <option value="cat1">Department 1</option>
-                            <option value="cat2">Department 2</option>
-                        </select><br>
-                        <label>Gender: </label>
-                        <select class="form-control">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="other">Prefer not to say</option>
-                        </select><br>
-                        <label>Qualification: </label>
-                        <input type="text" class="form-control"><br>
+                <form class="form-group" action="#">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Name: </label>
+                            <input type="text" class="form-control"><br>
+                            <label>Designation: </label>
+                            <input type="text" class="form-control"><br>
+                            <label>Email: </label>
+                            <input type="text" class="form-control"><br>
+                            <label>Department: </label>
+                            <select class="form-control">
+                                <option value="cat1">Department 1</option>
+                                <option value="cat2">Department 2</option>
+                            </select><br>
+                            <label>Gender: </label>
+                            <select class="form-control">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Prefer not to say</option>
+                            </select><br>
+                            <label>Qualification: </label>
+                            <input type="text" class="form-control"><br>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Skillset: </label>
+                            <input type="text" class="form-control"><br>
+                            <label>Contact No.: </label>
+                            <input type="number" class="form-control"><br>
+                            <label>Emergency Contact No.: </label>
+                            <input type="number" class="form-control"><br>
+                            <label>Blood group: </label>
+                            <input type="text" class="form-control"><br>
+                            <label>Salary: </label>
+                            <input type="number" class="form-control"><br>
+                            <br><br><input type="submit" value="Submit" class="btn btn-primary"
+                                           style="margin-top: -22px">
+                            <button value="cancel" class="btn btn-primary"
+                                    style="margin-top: -22px">Cancel</button>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <label>Skillset: </label>
-                        <input type="text" class="form-control"><br>
-                        <label>Contact No.: </label>
-                        <input type="number" class="form-control"><br>
-                        <label>Emergency Contact No.: </label>
-                        <input type="number" class="form-control"><br>
-                        <label>Blood group: </label>
-                        <input type="text" class="form-control"><br>
-                        <label>Salary: </label>
-                        <input type="number" class="form-control"><br>
-                        <br><br><input type="submit" value="Submit" class="btn btn-primary" style="margin-top: -22px">
-                    </div>
-                </div>
                 </form>
             </div>
             <div class="modal-footer">
